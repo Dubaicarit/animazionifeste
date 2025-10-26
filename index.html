@@ -531,7 +531,10 @@
                 
                 <!-- Form -->
                 <div class="bg-white rounded-3xl p-8 md:p-12 shadow-2xl">
-                    <form id="contact-form" class="space-y-6">
+                    <form id="contact-form" name="contatti" method="POST" data-netlify="true" class="space-y-6">
+<form id="contact-form" name="contatti" method="POST" data-netlify="true" class="space-y-6">
+    <input type="hidden" name="form-name" value="contatti">
+    <!-- resto del form -->
                         <!-- Nome -->
                         <div>
                             <label for="nome" class="block text-gray-700 font-semibold mb-2">
