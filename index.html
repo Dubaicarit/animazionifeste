@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matteo Animazioni - Feste Magiche per Bambini e Adulti</title>
-    <meta name="description" content="Animazioni per feste di compleanno, cresime, comunioni. Karaoke, palloncini, magia comica e tanto divertimento!">
+    <title>Matteo Animazioni - Feste Magiche per Bambini e Adulti in Lombardia</title>
+    <meta name="description" content="Animazioni per feste di compleanno, cresime, comunioni in Lombardia. Karaoke, palloncini, magia comica e tanto divertimento!">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -47,11 +47,6 @@
             50% { transform: rotate(3deg); }
         }
         
-        @keyframes pulse-glow {
-            0%, 100% { box-shadow: 0 0 20px rgba(255, 107, 107, 0.5); }
-            50% { box-shadow: 0 0 40px rgba(255, 107, 107, 0.8); }
-        }
-        
         .float-animation {
             animation: float 3s ease-in-out infinite;
         }
@@ -69,26 +64,6 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-        }
-        
-        .gradient-bg-1 {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        
-        .gradient-bg-2 {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-        }
-        
-        .gradient-bg-3 {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-        }
-        
-        .gradient-bg-4 {
-            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-        }
-        
-        .gradient-bg-5 {
-            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
         }
         
         .card-hover {
@@ -115,21 +90,10 @@
             75% { transform: translate(10px, -30px); }
         }
         
-        /* Effetto confetti */
-        .confetti {
-            position: fixed;
-            width: 10px;
-            height: 10px;
-            pointer-events: none;
-            z-index: 9999;
-        }
-        
-        /* Smooth scroll */
         html {
             scroll-behavior: smooth;
         }
         
-        /* Mobile menu */
         .mobile-menu {
             transform: translateX(100%);
             transition: transform 0.3s ease;
@@ -142,11 +106,10 @@
 </head>
 <body class="bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
 
-    <!-- Header / Navigation -->
+    <!-- Header -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg">
         <nav class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
-                <!-- Logo -->
                 <div class="flex items-center space-x-2">
                     <div class="text-4xl bounce-animation">🎉</div>
                     <div>
@@ -155,7 +118,6 @@
                     </div>
                 </div>
                 
-                <!-- Desktop Menu -->
                 <ul class="hidden md:flex space-x-8 items-center">
                     <li><a href="#home" class="text-gray-700 hover:text-purple-600 font-semibold transition">Home</a></li>
                     <li><a href="#servizi" class="text-gray-700 hover:text-purple-600 font-semibold transition">Servizi</a></li>
@@ -164,14 +126,12 @@
                     <li><a href="#contatti" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition">Contatti</a></li>
                 </ul>
                 
-                <!-- Mobile Menu Button -->
                 <button id="mobile-menu-btn" class="md:hidden text-3xl text-purple-600">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
         </nav>
         
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 bottom-0 w-64 bg-white shadow-2xl md:hidden">
             <div class="p-6">
                 <button id="close-menu-btn" class="text-3xl text-gray-600 mb-8">
@@ -190,7 +150,6 @@
 
     <!-- Hero Section -->
     <section id="home" class="relative pt-24 pb-20 min-h-screen flex items-center overflow-hidden">
-        <!-- Bolle di sapone animate -->
         <div class="bubble" style="width: 80px; height: 80px; top: 10%; left: 10%;"></div>
         <div class="bubble" style="width: 60px; height: 60px; top: 20%; left: 80%; animation-delay: 1s;"></div>
         <div class="bubble" style="width: 100px; height: 100px; top: 60%; left: 5%; animation-delay: 2s;"></div>
@@ -198,11 +157,10 @@
         
         <div class="container mx-auto px-4 relative z-10">
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <!-- Testo Hero -->
                 <div class="text-center md:text-left space-y-6">
                     <div class="inline-block">
                         <span class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-semibold wiggle-animation">
-                            🎈 Il Tuo Animatore di Fiducia
+                            🎪 Il Tuo Animatore di Fiducia in Lombardia
                         </span>
                     </div>
                     
@@ -212,7 +170,7 @@
                     
                     <p class="text-xl md:text-2xl text-gray-700 leading-relaxed">
                         Trasforma ogni evento in un momento <strong>magico</strong> e <strong>divertente</strong>! 
-                        Animazioni per bambini e adulti, magia comica, karaoke e tanto altro.
+                        Animazioni per bambini e adulti in tutta la Lombardia.
                     </p>
                     
                     <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -224,50 +182,47 @@
                         </a>
                     </div>
                     
-                    <!-- Social proof -->
                     <div class="flex items-center justify-center md:justify-start space-x-6 pt-4">
                         <div class="text-center">
-                            <p class="text-3xl font-bold text-purple-600">23+</p>
+                            <p class="text-3xl font-bold text-purple-600">50+</p>
                             <p class="text-sm text-gray-600">Feste Realizzate</p>
                         </div>
                         <div class="text-center">
-                            <p class="text-3xl font-bold text-pink-600">98%</p>
+                            <p class="text-3xl font-bold text-pink-600">100%</p>
                             <p class="text-sm text-gray-600">Clienti Soddisfatti</p>
                         </div>
                         <div class="text-center">
-                            <p class="text-3xl font-bold text-blue-600">5⭐</p>
-                            <p class="text-sm text-gray-600">Valutazione Media</p>
+                            <p class="text-3xl font-bold text-blue-600">⭐⭐⭐⭐⭐</p>
+                            <p class="text-sm text-gray-600">Recensioni</p>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Immagine Hero (placeholder con icone animate) -->
                 <div class="relative">
                     <div class="bg-gradient-to-br from-purple-400 via-pink-400 to-blue-400 rounded-3xl p-12 shadow-2xl relative overflow-hidden">
-                        <!-- Icone animate -->
                         <div class="grid grid-cols-3 gap-8 text-center">
                             <div class="float-animation">
                                 <div class="text-7xl mb-2">🎈</div>
                                 <p class="text-white font-bold">Palloncini</p>
                             </div>
                             <div class="bounce-animation" style="animation-delay: 0.3s;">
-                                <div class="text-7xl mb-2">🎪</div>
+                                <div class="text-7xl mb-2">🎭</div>
                                 <p class="text-white font-bold">Magia</p>
                             </div>
                             <div class="float-animation" style="animation-delay: 0.6s;">
-                                <div class="text-7xl mb-2">🎵</div>
+                                <div class="text-7xl mb-2">🎤</div>
                                 <p class="text-white font-bold">Karaoke</p>
                             </div>
                             <div class="bounce-animation" style="animation-delay: 0.9s;">
-                                <div class="text-7xl mb-2">🎉</div>
+                                <div class="text-7xl mb-2">🎂</div>
                                 <p class="text-white font-bold">Feste</p>
                             </div>
                             <div class="float-animation" style="animation-delay: 1.2s;">
-                                <div class="text-7xl mb-2">🎭</div>
+                                <div class="text-7xl mb-2">🎪</div>
                                 <p class="text-white font-bold">Animazione</p>
                             </div>
                             <div class="bounce-animation" style="animation-delay: 1.5s;">
-                                <div class="text-7xl mb-2">🎂</div>
+                                <div class="text-7xl mb-2">🎉</div>
                                 <p class="text-white font-bold">Compleanni</p>
                             </div>
                         </div>
@@ -290,7 +245,6 @@
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Servizio 1: Compleanni -->
                 <div class="card-hover bg-gradient-to-br from-purple-50 to-purple-100 rounded-3xl p-8 shadow-lg">
                     <div class="text-6xl mb-4">🎂</div>
                     <h3 class="text-2xl font-bold text-purple-800 mb-3">Feste di Compleanno</h3>
@@ -304,26 +258,24 @@
                     </ul>
                 </div>
                 
-                <!-- Servizio 2: Magia Comica -->
                 <div class="card-hover bg-gradient-to-br from-pink-50 to-pink-100 rounded-3xl p-8 shadow-lg">
-                    <div class="text-6xl mb-4">🎩</div>
+                    <div class="text-6xl mb-4">🎭</div>
                     <h3 class="text-2xl font-bold text-pink-800 mb-3">Magia Comica</h3>
                     <p class="text-gray-700 mb-4">
-                        Spettacoli di magia che fanno ridere e stupire grandi e piccini! Un mix perfetto di sorpresa e divertimento.
+                        Spettacoli di magia che fanno ridere e stupire grandi e piccini!
                     </p>
                     <ul class="space-y-2 text-gray-600">
                         <li><i class="fas fa-check-circle text-pink-600 mr-2"></i> Trucchi mozzafiato</li>
                         <li><i class="fas fa-check-circle text-pink-600 mr-2"></i> Comicità garantita</li>
-                        <li><i class="fas fa-check-circle text-pink-600 mr-2"></i> Coinvolgimento del pubblico</li>
+                        <li><i class="fas fa-check-circle text-pink-600 mr-2"></i> Coinvolgimento pubblico</li>
                     </ul>
                 </div>
                 
-                <!-- Servizio 3: Karaoke -->
                 <div class="card-hover bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 shadow-lg">
                     <div class="text-6xl mb-4">🎤</div>
                     <h3 class="text-2xl font-bold text-blue-800 mb-3">Karaoke</h3>
                     <p class="text-gray-700 mb-4">
-                        Canta le tue canzoni preferite! Karaoke professionale con migliaia di brani per tutti i gusti.
+                        Karaoke professionale con migliaia di brani per tutti i gusti!
                     </p>
                     <ul class="space-y-2 text-gray-600">
                         <li><i class="fas fa-check-circle text-blue-600 mr-2"></i> Attrezzatura professionale</li>
@@ -332,12 +284,11 @@
                     </ul>
                 </div>
                 
-                <!-- Servizio 4: Palloncini e Bolle -->
                 <div class="card-hover bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8 shadow-lg">
                     <div class="text-6xl mb-4">🎈</div>
                     <h3 class="text-2xl font-bold text-green-800 mb-3">Palloncini & Bolle</h3>
                     <p class="text-gray-700 mb-4">
-                        Sculture di palloncini creative e spettacoli di bolle di sapone giganti che incantano tutti!
+                        Sculture di palloncini e bolle di sapone giganti!
                     </p>
                     <ul class="space-y-2 text-gray-600">
                         <li><i class="fas fa-check-circle text-green-600 mr-2"></i> Sculture personalizzate</li>
@@ -346,12 +297,11 @@
                     </ul>
                 </div>
                 
-                <!-- Servizio 5: Cresime e Comunioni -->
                 <div class="card-hover bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-3xl p-8 shadow-lg">
-                    <div class="text-6xl mb-4">✨</div>
+                    <div class="text-6xl mb-4">⛪</div>
                     <h3 class="text-2xl font-bold text-yellow-800 mb-3">Cresime & Comunioni</h3>
                     <p class="text-gray-700 mb-4">
-                        Animazione elegante e divertente per cerimonie religiose, rispettosa e coinvolgente.
+                        Animazione elegante per cerimonie religiose.
                     </p>
                     <ul class="space-y-2 text-gray-600">
                         <li><i class="fas fa-check-circle text-yellow-600 mr-2"></i> Intrattenimento adatto</li>
@@ -360,12 +310,11 @@
                     </ul>
                 </div>
                 
-                <!-- Servizio 6: Balli e Musica -->
                 <div class="card-hover bg-gradient-to-br from-red-50 to-red-100 rounded-3xl p-8 shadow-lg">
                     <div class="text-6xl mb-4">💃</div>
-                    <h3 class="text-2xl font-bold text-red-800 mb-3">Balli & Musica per Famiglie</h3>
+                    <h3 class="text-2xl font-bold text-red-800 mb-3">Balli & Musica</h3>
                     <p class="text-gray-700 mb-4">
-                        Balli di gruppo, coreografie e musica per far ballare tutta la famiglia insieme!
+                        Balli di gruppo e musica per tutta la famiglia!
                     </p>
                     <ul class="space-y-2 text-gray-600">
                         <li><i class="fas fa-check-circle text-red-600 mr-2"></i> Playlist personalizzata</li>
@@ -385,13 +334,11 @@
                     <span class="gradient-text">Galleria</span> delle Nostre Feste
                 </h2>
                 <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Guarda i momenti magici che abbiamo creato per i nostri clienti!
+                    Guarda i momenti magici che abbiamo creato!
                 </p>
             </div>
             
-            <!-- Grid di immagini placeholder -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Immagine 1 -->
                 <div class="card-hover rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br from-purple-300 to-pink-300 h-64 flex items-center justify-center">
                     <div class="text-center text-white">
                         <i class="fas fa-birthday-cake text-7xl mb-3"></i>
@@ -399,7 +346,6 @@
                     </div>
                 </div>
                 
-                <!-- Immagine 2 -->
                 <div class="card-hover rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br from-blue-300 to-cyan-300 h-64 flex items-center justify-center">
                     <div class="text-center text-white">
                         <i class="fas fa-magic text-7xl mb-3"></i>
@@ -407,7 +353,6 @@
                     </div>
                 </div>
                 
-                <!-- Immagine 3 -->
                 <div class="card-hover rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br from-green-300 to-emerald-300 h-64 flex items-center justify-center">
                     <div class="text-center text-white">
                         <i class="fas fa-microphone text-7xl mb-3"></i>
@@ -415,15 +360,13 @@
                     </div>
                 </div>
                 
-                <!-- Immagine 4 -->
                 <div class="card-hover rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br from-yellow-300 to-orange-300 h-64 flex items-center justify-center">
                     <div class="text-center text-white">
                         <i class="fas fa-child text-7xl mb-3"></i>
-                        <p class="text-xl font-bold">Giochi per Bambini</p>
+                        <p class="text-xl font-bold">Giochi Bambini</p>
                     </div>
                 </div>
                 
-                <!-- Immagine 5 -->
                 <div class="card-hover rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br from-red-300 to-pink-300 h-64 flex items-center justify-center">
                     <div class="text-center text-white">
                         <i class="fas fa-users text-7xl mb-3"></i>
@@ -431,20 +374,12 @@
                     </div>
                 </div>
                 
-                <!-- Immagine 6 -->
                 <div class="card-hover rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br from-indigo-300 to-purple-300 h-64 flex items-center justify-center">
                     <div class="text-center text-white">
                         <i class="fas fa-music text-7xl mb-3"></i>
                         <p class="text-xl font-bold">Balli di Gruppo</p>
                     </div>
                 </div>
-            </div>
-            
-            <div class="text-center mt-12">
-                <p class="text-gray-600 text-lg">
-                    <i class="fas fa-camera text-purple-600 mr-2"></i>
-                    Contattaci per vedere altre foto e video delle nostre feste!
-                </p>
             </div>
         </div>
     </section>
@@ -454,22 +389,19 @@
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <!-- Immagine profilo (placeholder) -->
                     <div class="relative">
                         <div class="bg-gradient-to-br from-purple-400 to-pink-400 rounded-3xl p-2 shadow-2xl">
                             <div class="bg-white rounded-2xl p-12 flex items-center justify-center">
                                 <div class="text-center">
-                                    <div class="text-9xl mb-4">👨‍🎤</div>
-                                    <div class="text-6xl wiggle-animation">🎉</div>
+                                    <div class="text-9xl mb-4">🎭</div>
+                                    <div class="text-6xl wiggle-animation">✨</div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Decorazioni -->
                         <div class="absolute -top-6 -right-6 text-6xl bounce-animation">🎈</div>
-                        <div class="absolute -bottom-6 -left-6 text-6xl float-animation">⭐</div>
+                        <div class="absolute -bottom-6 -left-6 text-6xl float-animation">🎉</div>
                     </div>
                     
-                    <!-- Testo -->
                     <div class="space-y-6">
                         <h2 class="text-5xl font-bold">
                             Ciao, sono <span class="gradient-text">Matteo!</span>
@@ -481,15 +413,15 @@
                             </p>
                             
                             <p>
-                                Da anni mi dedico con entusiasmo all'<strong>animazione</strong> per bambini e adulti, portando gioia e divertimento in ogni evento.
+                                Da anni mi dedico all'<strong>animazione</strong> per bambini e adulti in <strong>tutta la Lombardia</strong>, portando gioia in ogni evento.
                             </p>
                             
                             <p>
-                                Che si tratti di un <strong>compleanno</strong>, una <strong>comunione</strong>, una <strong>cresima</strong> o semplicemente una festa in famiglia, il mio obiettivo è sempre lo stesso: creare <strong>momenti indimenticabili</strong>!
+                                Che si tratti di un <strong>compleanno</strong>, una <strong>comunione</strong>, una <strong>cresima</strong> o una festa in famiglia, creo <strong>momenti indimenticabili</strong>!
                             </p>
                             
                             <p>
-                                Con <strong>magia comica</strong>, <strong>karaoke</strong>, <strong>palloncini</strong>, <strong>bolle di sapone</strong> e tanta <strong>musica</strong>, trasformo ogni evento in un'esperienza magica! ✨
+                                Con <strong>magia comica</strong>, <strong>karaoke</strong>, <strong>palloncini</strong> e tanta <strong>musica</strong>, trasformo ogni evento in un'esperienza magica! ✨
                             </p>
                         </div>
                         
@@ -510,9 +442,8 @@
         </div>
     </section>
 
-       <!-- Contatti Section -->
+    <!-- Contatti Section -->
     <section id="contatti" class="py-20 bg-gradient-to-br from-purple-600 via-pink-600 to-blue-600 relative overflow-hidden">
-        <!-- Decorazioni di sfondo -->
         <div class="absolute top-10 left-10 text-8xl opacity-20 float-animation">🎈</div>
         <div class="absolute bottom-10 right-10 text-8xl opacity-20 bounce-animation">🎉</div>
         <div class="absolute top-1/2 left-1/4 text-6xl opacity-10">🎊</div>
@@ -525,22 +456,18 @@
                         Organizziamo la Tua <span class="text-yellow-300">Festa da Sogno!</span> 🎂
                     </h2>
                     <p class="text-xl text-white/90">
-                        Compila il form qui sotto e ti contatterò entro 24 ore per organizzare il tuo evento perfetto! 🌟
+                        Compila il form e ti contatterò entro 24 ore per organizzare il tuo evento in Lombardia! 🌟
                     </p>
                 </div>
                 
-                <!-- Form -->
                 <div class="bg-white rounded-3xl p-8 md:p-12 shadow-2xl">
                     <form name="contatti" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6">
-                        <!-- Campo nascosto per netlify -->
                         <input type="hidden" name="form-name" value="contatti">
                         
-                        <!-- Honeypot anti-spam -->
                         <p class="hidden">
                             <label>Non compilare se sei umano: <input name="bot-field"></label>
                         </p>
                         
-                        <!-- Nome -->
                         <div>
                             <label for="nome" class="block text-gray-700 font-semibold mb-2">
                                 <i class="fas fa-user text-purple-600 mr-2"></i> Nome Completo *
@@ -555,7 +482,6 @@
                             >
                         </div>
                         
-                        <!-- Email -->
                         <div>
                             <label for="email" class="block text-gray-700 font-semibold mb-2">
                                 <i class="fas fa-envelope text-purple-600 mr-2"></i> Email *
@@ -570,7 +496,6 @@
                             >
                         </div>
                         
-                        <!-- Telefono -->
                         <div>
                             <label for="telefono" class="block text-gray-700 font-semibold mb-2">
                                 <i class="fas fa-phone text-purple-600 mr-2"></i> Telefono *
@@ -585,7 +510,6 @@
                             >
                         </div>
                         
-                        <!-- Tipo Evento -->
                         <div>
                             <label for="tipo-evento" class="block text-gray-700 font-semibold mb-2">
                                 <i class="fas fa-gift text-purple-600 mr-2"></i> Tipo di Evento *
@@ -596,7 +520,7 @@
                                 required
                                 class="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-purple-600 focus:outline-none transition"
                             >
-                                <option value="">Seleziona il tipo di evento...</option>
+                                <option value="">Seleziona...</option>
                                 <option value="compleanno-bambini">Compleanno Bambini</option>
                                 <option value="compleanno-adulti">Compleanno Adulti</option>
                                 <option value="comunione">Comunione</option>
@@ -606,7 +530,6 @@
                             </select>
                         </div>
                         
-                        <!-- Data Evento -->
                         <div>
                             <label for="data-evento" class="block text-gray-700 font-semibold mb-2">
                                 <i class="fas fa-calendar text-purple-600 mr-2"></i> Data Evento (approssimativa)
@@ -619,7 +542,20 @@
                             >
                         </div>
                         
-                        <!-- Messaggio -->
+                        <div>
+                            <label for="citta" class="block text-gray-700 font-semibold mb-2">
+                                <i class="fas fa-map-marker-alt text-purple-600 mr-2"></i> Città in Lombardia *
+                            </label>
+                            <input 
+                                type="text" 
+                                id="citta" 
+                                name="citta" 
+                                required
+                                class="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-purple-600 focus:outline-none transition"
+                                placeholder="Milano, Bergamo, Como..."
+                            >
+                        </div>
+                        
                         <div>
                             <label for="messaggio" class="block text-gray-700 font-semibold mb-2">
                                 <i class="fas fa-comment text-purple-600 mr-2"></i> Messaggio / Richieste Speciali
@@ -633,7 +569,6 @@
                             ></textarea>
                         </div>
                         
-                        <!-- Submit Button -->
                         <div class="text-center pt-4">
                             <button 
                                 type="submit" 
@@ -645,7 +580,6 @@
                         </div>
                     </form>
                     
-                    <!-- Info Contatto Alternative -->
                     <div class="mt-12 pt-8 border-t-2 border-gray-200">
                         <p class="text-center text-gray-700 font-semibold mb-6">Oppure contattami direttamente:</p>
                         <div class="flex flex-col md:flex-row justify-center items-center gap-6">
@@ -663,22 +597,21 @@
             </div>
         </div>
     </section>
+
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-8 mb-8">
-                <!-- Info -->
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
                         <div class="text-3xl">🎉</div>
                         <h3 class="text-2xl font-bold">Matteo Animazioni</h3>
                     </div>
                     <p class="text-gray-400">
-                        Feste magiche e divertimento garantito per bambini e adulti. Da oltre 5 anni portiamo gioia in ogni evento!
+                        Feste magiche e divertimento garantito in tutta la Lombardia!
                     </p>
                 </div>
                 
-                <!-- Link Rapidi -->
                 <div>
                     <h4 class="text-xl font-bold mb-4">Link Rapidi</h4>
                     <ul class="space-y-2">
@@ -690,7 +623,6 @@
                     </ul>
                 </div>
                 
-                <!-- Social -->
                 <div>
                     <h4 class="text-xl font-bold mb-4">Seguimi sui Social</h4>
                     <div class="flex space-x-4">
@@ -700,27 +632,19 @@
                         <a href="#" class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition">
                             <i class="fab fa-instagram text-xl"></i>
                         </a>
-                        <a href="#" class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
-                            <i class="fab fa-tiktok text-xl"></i>
-                        </a>
                         <a href="#" class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition">
                             <i class="fab fa-whatsapp text-xl"></i>
                         </a>
                     </div>
-                    <p class="text-gray-400 mt-4 text-sm">
-                        Segui le nostre feste e gli eventi più divertenti!
-                    </p>
                 </div>
             </div>
             
-            <!-- Copyright -->
             <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 Matteo Animazioni. Tutti i diritti riservati. | Creato con ❤️ e tanta allegria!</p>
+                <p>&copy; 2025 Matteo Animazioni. Tutti i diritti riservati.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Script JavaScript -->
     <script src="js/main.js"></script>
 </body>
 </html>
